@@ -11,7 +11,7 @@ class Statemate < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/subbeh/statemate/releases/download/v0.2.1/statemate_0.2.1_darwin_amd64.tar.gz"
-      sha256 "1531c865a222ee59f1b376b90f77a35ef8a47692de1694c0a4ffc21c6b020b10"
+      sha256 "ceaa802f8a494e629d5b01aeb1ad1ae831b6d5662fd5448c1b4e6ed8e91717ee"
 
       define_method(:install) do
         bin.install "mate"
@@ -19,7 +19,7 @@ class Statemate < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/subbeh/statemate/releases/download/v0.2.1/statemate_0.2.1_darwin_arm64.tar.gz"
-      sha256 "e5900502fc3f2536200e7f4dc8b9dd9e86432bf362b165e0809e6b2850ee3997"
+      sha256 "278354a38d78c70e8de534269d97a5863fd9035f9cfdc4f28d5a6733774d0450"
 
       define_method(:install) do
         bin.install "mate"
@@ -30,14 +30,14 @@ class Statemate < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/subbeh/statemate/releases/download/v0.2.1/statemate_0.2.1_linux_amd64.tar.gz"
-      sha256 "e001c455e5cbea00a325c8febdea01872b88243d030607a1c45c03fc24442eeb"
+      sha256 "eaacbc22cdf65a979d4866fba7861c45ea93f43a27d6dc62c08feabbe13adb62"
       define_method(:install) do
         bin.install "mate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/subbeh/statemate/releases/download/v0.2.1/statemate_0.2.1_linux_arm64.tar.gz"
-      sha256 "db4c9eed1e5332624288e5417725ab37fd424f0bee30bdc67b59cafd7d262ef2"
+      sha256 "0d554ae61082610b089f5181c6ed13676629aaf875ee29aac5b77beb13f22271"
       define_method(:install) do
         bin.install "mate"
       end
