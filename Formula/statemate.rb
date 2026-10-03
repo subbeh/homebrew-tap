@@ -5,21 +5,21 @@
 class Statemate < Formula
   desc "Declarative system configuration management"
   homepage "https://github.com/subbeh/statemate"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/subbeh/statemate/releases/download/v0.3.1/statemate_0.3.1_darwin_amd64.tar.gz"
-      sha256 "cd6d33a0a77dbef9ad5c89a5b5ad52a3aaf08f5cfe2ff00d541eb95489d990e7"
+      url "https://github.com/subbeh/statemate/releases/download/v0.4.0/statemate_0.4.0_darwin_amd64.tar.gz"
+      sha256 "c9e5b3f3235a9bcc77d6b7464ab3a19f42e241b20e83dfbc18a854c76c1a2428"
 
       define_method(:install) do
         bin.install "mate"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/subbeh/statemate/releases/download/v0.3.1/statemate_0.3.1_darwin_arm64.tar.gz"
-      sha256 "ec5c4f459893a5c61a8d8031dca7aa57534f0f2ae8d98efb03880df0b333004f"
+      url "https://github.com/subbeh/statemate/releases/download/v0.4.0/statemate_0.4.0_darwin_arm64.tar.gz"
+      sha256 "4c4d431a58005f9e83d4629da35308827ba352b3be3066d58a90ceaca41b9bbe"
 
       define_method(:install) do
         bin.install "mate"
@@ -29,15 +29,15 @@ class Statemate < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/subbeh/statemate/releases/download/v0.3.1/statemate_0.3.1_linux_amd64.tar.gz"
-      sha256 "33805dfe757bd65fed3e4c439de24799d8bb149e0a914214f23fbb41e7eef177"
+      url "https://github.com/subbeh/statemate/releases/download/v0.4.0/statemate_0.4.0_linux_amd64.tar.gz"
+      sha256 "b7b9c5d5aa38fd0f44a870ed350dcd1fd7249aeb858d8dc8531bd4e4e1dd9272"
       define_method(:install) do
         bin.install "mate"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/subbeh/statemate/releases/download/v0.3.1/statemate_0.3.1_linux_arm64.tar.gz"
-      sha256 "51aebcd4468276d1ff1d76bd901f3d8d8fe74bc9e8722d08c59dee81b253135e"
+      url "https://github.com/subbeh/statemate/releases/download/v0.4.0/statemate_0.4.0_linux_arm64.tar.gz"
+      sha256 "5021969809ca63d5a61e73f69bbfb1fab53111e5a5066750ebba85b30832465a"
       define_method(:install) do
         bin.install "mate"
       end
